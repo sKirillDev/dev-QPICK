@@ -34,19 +34,30 @@
 
 @theme {
   /* catalog */
+  --color-sky-50: #EAEAEA;
   --color-stone-900: #1C1C27;
-  --color-stone-950: #101010; 
+  --color-stone-950: #101010;
   --color-neutral-600: #838383;
   --color-orange-300: #FFCE7F;
   --color-orange-400: #FFA542;
   --color-red-400: #DF6464;
 
-  --container-7xl: 1134px;
+  --text-xs: 13px;
+  --text-sm: 15px;
+  --text-lg: 17px;
+  --text-2xl: 25px;
+
+  --container-7xl: 1158px;
 
   --font-montserrat: "Montserrat";
 }
 
-[alt=""] {
-  filter: blur(10px);
-  opacity: 0.6;
+@layer components {
+  .btn-arrow::after {
+    background: url(./assets/img/arrow.svg) no-repeat center;
+  }
+
+  .btn-arrow.open::after {
+    transform: rotate(-180deg);
+  }
 }
