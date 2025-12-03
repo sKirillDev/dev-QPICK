@@ -19,3 +19,17 @@ const catalogDesktop = document.getElementById('catalog');
 btnMenuMobile.addEventListener('click', () => {
     catalogDesktop.classList.toggle('hidden');
 })
+
+
+const wrapper = document.getElementById('cases-wrapper');
+const indicator = document.getElementById('cases-indicator');
+const total = wrapper.children.length;
+
+function updateIndicator() {
+    const scrollLeft = wrapper.scrollLeft;
+    const cardWidth = wrapper.scrollWidth / total;
+    const currentIndex = Math.round(scrollLeft / cardWidth);
+    indicator.textContent = `${currentIndex + 1} из ${total}`;
+}
+
+wrapper.addEventListener('scroll', updateIndicator);

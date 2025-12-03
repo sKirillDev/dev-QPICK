@@ -32,7 +32,10 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     handlebars({
-      partialDirectory: resolve(__dirname, "src/partials")
+      partialDirectory: [
+        resolve(__dirname, "src/partials"),
+        resolve(__dirname, "src/partials/templates") 
+      ]
     }),
     FullReload(["src/partials/**/*"])
   ],

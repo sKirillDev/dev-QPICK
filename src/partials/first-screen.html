@@ -1,0 +1,36 @@
+<section class="max-w-7xl mx-auto w-full px-6">
+    <a href="#"
+        class="relative h-44 md:h-50 flex items-center justify-center md:gap-45 overflow-hidden mt-5.5 mb-11 bg-stone-950 text-white rounded-[30px]">
+        <p
+            class="text-xl md:text-3xl font-semibold text-start md:text-center max-w-41 md:max-w-75 absolute md:static left-6 md:left-0 top-1/2 md:top-0 z-20 -translate-y-1/2 md:translate-0">
+            Аксессуары для Iphone 13 Pro Max
+        </p>
+        <img src="./assets/img/banner-item.png"
+            class="relative object-contain h-37 md:h-auto z-10 ml-auto md:ml-0 mr-8 md:mr-0 mt-auto" alt="banner-item">
+    </a>
+    <div>
+        <div class="flex">
+            <h4 class="text-xl font-semibold text-neutral-600 mb-5">Чехлы</h4>
+            <div id="cases-indicator" class="md:hidden text-sm font-medium text-neutral-600 ml-auto">
+                1 из 3
+            </div>
+        </div>
+        <div id="cases-wrapper" class="flex gap-7.5 overflow-x-auto md:overflow-visible hide-scrollbar">
+            {{> mobile-cases
+                url = "mobile-glass-case.png"
+                alt = "mobile-glass-case"
+                name = "Стеклянные"
+            }}
+            {{> mobile-cases
+                url = "mobile-silicone-case.png"
+                alt = "mobile-silicone-case"
+                name = "Силиконовые"
+            }}
+            {{> mobile-cases
+                url = "mobile-leather-case.png"
+                alt = "mobile-leather-case"
+                name = "Кожанные"
+            }}
+        </div>
+    </div>
+</section>
