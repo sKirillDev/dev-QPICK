@@ -1,0 +1,35 @@
+<a href="#"
+    class="card block h-full w-full text-stone-900 relative shrink-0 overflow-hidden max-w-95 md:max-w-87.5 px-5.75 md:px-5.25 pt-4.5 md:pt-3.75 pb-2.5 md:pb-8 rounded-[30px] shadow-[0_0_20px_0_rgba(0,0,0,0.1)] hover:scale-95 hover:duration-700">
+    <div class="flex md:absolute md:top-3.75 md:left-5.25 justify-between w-full max-w-82.5">
+        <img src="./assets/img/ldnio-brand.png" class="md:hidden" alt="ldnio-brand">
+        <button type="button" class="likeBtn cursor-pointer ml-auto md:ml-0">
+            <img src="./assets/img/favorite-unchecked-icon.svg"
+                class="likeImg w-5 h-4.5 object-contain hover:scale-130 hover:duration-300 z-20" alt="favorite">
+        </button>
+    </div>
+    <img src="./assets/img/{{url}}" class="w-82 md:w-55 h-70 md:h-59.5 object-contain mx-auto mb-3.75 md:mb-13.5"
+        alt="{{alt}}">
+    <div class="grid grid-cols-2">
+        <div>
+            <span class="block text-lg font-semibold text-start mb-5 md:mb-6">{{name}}</span>
+            <div class="hidden md:flex gap-3">
+                <svg class="w-6 h-5.5 md:text-neutral-600">
+                    <use href="./assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+                <span class="text-lg font-semibold text-neutral-600">{{rating}}</span>
+            </div>
+        </div>
+        <div class="flex flex-col ml-auto">
+            <div class="flex">
+                <span class="current-price text-lg font-semibold text-orange-400">{{current-price}}
+                    ₴</span>
+                <span class="discount hidden md:block text-lg font-semibold text-red-400"></span>
+            </div>
+            <div class="flex gap-1.75">
+                <span
+                    class="real-price text-xs md:text-sm font-semibold text-gray-300 line-through decoration-red-400 mx-auto md:ml-2">{{real-price}}</span>
+                <span class="test discount md:hidden text-xs font-semibold text-red-400"></span>
+            </div>
+        </div>
+    </div>
+</a>
