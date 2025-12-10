@@ -32,9 +32,9 @@ likeButtons.forEach(btn => {
     e.stopPropagation();
     e.preventDefault();
     liked = !liked;
-    img.src = liked 
-      ? './assets/img/favorite-checked-icon.svg' 
-      : './assets/img/favorite-unchecked-icon.svg';
+    img.src = liked ?
+      './assets/img/favorite-checked-icon.svg' :
+      './assets/img/favorite-unchecked-icon.svg';
   });
 });
 
@@ -53,4 +53,31 @@ document.querySelectorAll('.cards-wrapper').forEach(wrapper => {
   wrapper.addEventListener('scroll', updateIndicator);
   window.addEventListener('resize', updateIndicator);
   updateIndicator();
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const mobileHeader = document.querySelector('.mobile-header');
+  const logo = document.querySelector('.logo');
+  const pageTitle = mobileHeader.querySelector('.page-title');
+
+  const hasTitle = pageTitle && pageTitle.textContent.trim() !== '';
+
+  if (window.innerWidth < 768) {
+    if (hasTitle) {
+      mobileHeader.classList.remove('hidden');
+      logo.classList.add('hidden');
+    } else {
+      mobileHeader.classList.add('hidden');
+      logo.classList.remove('hidden');
+    }
+  } else {
+    mobileHeader.classList.add('hidden');
+    logo.classList.remove('hidden');
+  }
 });
