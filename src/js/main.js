@@ -1,6 +1,7 @@
 import '../css/style.css'
 import './dropdown.js'
 import './product-discount.js'
+import './map.js'
 
 if (!document.getElementById('svg-sprite')) {
   fetch('icons.svg')
@@ -53,11 +54,6 @@ document.querySelectorAll('.cards-wrapper').forEach(wrapper => {
   wrapper.addEventListener('scroll', updateIndicator);
   window.addEventListener('resize', updateIndicator);
   updateIndicator();
-});
-
-
-document.addEventListener('DOMContentLoaded', () => {
-
 });
 
 

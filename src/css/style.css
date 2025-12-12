@@ -70,13 +70,8 @@
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
   }
-}
-
-/* .a {
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+  
+  .gm-style-cc, .gm-style .gm-style-cc { 
+    opacity: 0.3;
   }
-} */
+}
