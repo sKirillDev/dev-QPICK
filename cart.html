@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+
+<body class="flex flex-col min-h-screen font-montserrat bg-sky-50 text-stone-950">
+    {{> header}}
+    <div
+        class="flex flex-col max-w-7xl mx-auto w-full px-6 md:my-auto justify-center min-h-[calc(100vh-168px)] md:min-h-auto">
+        <div class="grid gap-5 md:gap-7.5 max-w-135 mx-auto">
+            <picture class="mx-auto">
+                <source type="image/png" media="(min-width: 768px)" srcset="./assets/img/cart-lg.png">
+                <img src="./assets/img/cart-sm.png" alt="cart">
+            </picture>
+            <div class="text-center">
+                <h3 class="text-xl md:text-3xl font-medium mb-2 md:mb-0">Корзина пуста</h3>
+                <h4 class="text-sm md:text-xl text-neutral-600">Но это никогда не поздно исправить :)</h4>
+            </div>
+            <a href="index.html"
+                class="hidden md:block w-full py-5 text-lg font-semibold text-center text-white bg-stone-950 border border-stone-950 rounded-[20px] active:bg-transparent active:text-stone-950">
+                В каталог товаров
+            </a>
+        </div>
+        <div class="fixed md:hidden w-full bottom-0 left-0 px-6 pb-3">
+            {{> home-link 
+                name="В каталог товаров" 
+            }}
+        </div> 
+    </div>
+    <div class="hidden md:block mt-auto">
+        {{> footer}}
+    </div>
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
