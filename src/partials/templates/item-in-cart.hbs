@@ -1,0 +1,30 @@
+<div class="item-in-cart grid gap-5 md:gap-4.25 pt-4.5 pb-5.75 md:pb-5.25 pl-7.5 md:pl-4.75 pr-6.25 md:pr-7 rounded-[30px] shadow-[0_0_20px_0_rgba(0,0,0,0.1)]">
+    <div class="flex gap-3.25 md:gap-5.75">
+        <img src="./assets/img/{{url}}" alt="{{alt}}" class="w-17.5 md:w-36.75 h-19 md:h-34 object-contain">
+        <div class="grid md:gap-3 mb-2.75 md:mb-6.75 mt-auto">
+            <span class="text-sm md:text-lg font-medium text-stone-900">{{name}}</span>
+            <span class="text-sm font-semibold text-stone-900 md:text-gray-300">{{price}}</span>
+        </div>
+        <button type="button" class="w-5 h-4.25 ml-auto cursor-pointer">
+            <svg class="w-5 h-4.25 text-red-400">
+                <use href="./assets/icons/sprite.svg#icon-trash-can"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="flex items-center md:items-start">
+        <div class="flex gap-4.75 md:gap-5.75 items-center">
+            <button type="button" class="btn-clicker-minus cursor-pointer">
+                <svg class="w-7.5 md:w-9 h-7.5 text-orange-300">
+                    <use href="./assets/icons/sprite.svg#icon-minus"></use>
+                </svg>
+            </button>
+            <span class="count-clicker text-lg font-semibold text-black">1</span>
+            <button type="button" class="btn-clicker-plus cursor-pointer">
+                <svg class="w-7.5 md:w-9 h-7.5 text-orange-300">
+                    <use href="./assets/icons/sprite.svg#icon-plus"></use>
+                </svg>
+            </button>
+        </div>
+        <span class="text-sm font-semibold text-stone-900 ml-auto">{{price}}</span>
+    </div>
+</div>

@@ -9,8 +9,10 @@
 </head>
 
 <body class="flex flex-col min-h-screen font-montserrat bg-sky-50 text-stone-950">
-    {{> header}}
-    <div
+    {{> header
+        page-title="Корзина"
+    }}
+    <div id="cart-empty"
         class="flex flex-col max-w-7xl mx-auto w-full px-6 md:my-auto justify-center min-h-[calc(100vh-168px)] md:min-h-auto">
         <div class="grid gap-5 md:gap-7.5 max-w-135 mx-auto">
             <picture class="mx-auto">
@@ -30,11 +32,77 @@
             {{> home-link 
                 name="В каталог товаров" 
             }}
-        </div> 
+        </div>
+    </div>
+
+    <div id="cart-filled" class="hidden max-w-7xl mx-auto w-full px-6 pt-7.25">
+        <h3 class="hidden md:block text-xl font-semibold text-stone-900 mb-3.25">Корзина</h3>
+        <div class="flex flex-col md:flex-row items-start gap-5 md:gap-31.75 min-h-[calc(100vh-118px)] md:min-h-auto">
+            <div class="grid gap-5 md:gap-3.25 w-full">
+                {{> item-in-cart
+                    url = "headphones-1.png"
+                    alt = "Apple BYZ S852I"
+                    name = "Apple BYZ S852I"
+                    price = "2030 ₴"
+                }}
+                <div
+                    class="grid gap-4.25 pt-3.75 pb-5.5 pl-5.5 pr-4.75 rounded-[30px] shadow-[0_0_20px_0_rgba(0,0,0,0.1)]">
+                    <div class="flex">
+                        <h3 class="text-lg md:text-xl font-semibold text-black">Доставка</h3>
+                        <span class="md:hidden text-sm font-semibold text-stone-900 ml-auto">499 ₴</span>
+                    </div>
+                    <div class="ml-1.75">
+                        <div id="map" class="w-full h-43.25 md:h-43.25 mb-5 md:mb-2.75 rounded-[10px] bg-[#E6E4E0]">
+                        </div>
+                        <div class="flex">
+                            <div class="flex gap-3 items-center">
+                                <svg class="w-5.5 h-3.25 text-stone-950">
+                                    <use href="./assets/icons/sprite.svg#icon-truck"></use>
+                                </svg>
+                                <div id="delivery-choice-toggle" class="flex relative cursor-pointer">
+                                    <span class="text-sm font-medium text-black">Доставка курьером</span>
+                                    <span class="arrow ml-19.25 my-auto transform duration-300">
+                                        <svg class="w-3.5 h-2 text-stone-950">
+                                            <use href="./assets/icons/sprite.svg#arrow"></use>
+                                        </svg>
+                                    </span>
+                                    <ul id="delivery-option"
+                                        class="absolute top-5.25 left-0 bg-white z-20 p-2 w-full hidden">
+                                        <li><button type="button" class="mb-2 text-black cursor-pointer">Lorem,
+                                                ipsum.</button></li>
+                                        <li><button type="button" class="mb-2 text-black cursor-pointer">Lorem,
+                                                ipsum.</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <span class="hidden md:block text-sm font-semibold text-stone-900 ml-auto">499 ₴</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block w-full mt-auto md:mt-0 md:max-w-87.5 rounded-[30px] shadow-[0_0_20px_0_rgba(0,0,0,0.1)]">
+                <div class="flex pt-5.25 pl-5.25 pr-4 pb-3.75">
+                    <span class="text-sm font-semibold text-black uppercase">Итого</span>
+                    <span class="text-sm font-semibold text-black ml-auto">₴ 2 529</span>
+                </div>
+                <a href="#"
+                    class="block text-lg font-semibold text-white text-center py-5.5 w-full border border-inherit bg-stone-950 rounded-[20px] shadow-[0_0_0_0_rgba(0,0,0,0.25)] active:bg-transparent active:text-stone-950">Перейти
+                    к оформлению</a>
+            </div>
+        </div>
+    </div>
+    <div class="hidden md:flex gap-2 fixed bottom-6 left-6">
+        <button type="button" id="btn-cart-empty"
+            class="bg-orange-400 border border-orange-400 text-sky-50 rounded-full p-4 cursor-pointer">Empty</button>
+        <button type="button" id="btn-cart-filled"
+            class="bg-orange-400 border border-orange-400 text-sky-50 rounded-full p-4 cursor-pointer">Filled</button>
     </div>
     <div class="hidden md:block mt-auto">
         {{> footer}}
     </div>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd2H4_o3aF4nlm5TgPVzEGY48Aj0RZ230&callback=initMap&v=weekly"
+        async defer></script>
     <script type="module" src="/src/js/main.js"></script>
 </body>
 

@@ -2,6 +2,7 @@ import '../css/style.css'
 import './dropdown.js'
 import './product-discount.js'
 import './map.js'
+import './cart.js'
 
 if (!document.getElementById('svg-sprite')) {
   fetch('icons.svg')
