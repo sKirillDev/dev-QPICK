@@ -37,11 +37,11 @@ cards.forEach(card => {
 });
 
 
-const deliveryChoiceToggle = document.getElementById('delivery-choice-toggle');
-const deliveryOption = document.getElementById('delivery-option');
-const arrow = document.querySelector('.arrow');
+// const deliveryChoiceToggle = document.getElementById('delivery-choice-toggle');
+// const deliveryOption = document.getElementById('delivery-option');
+// const arrow = document.querySelector('.arrow');
 
-deliveryChoiceToggle.addEventListener('click', () => {
-  deliveryOption.classList.toggle('hidden');
-  arrow.classList.toggle('rotate-180');
-})
+// deliveryChoiceToggle.addEventListener('click', () => {
+//   deliveryOption.classList.toggle('hidden');
+//   arrow.classList.toggle('rotate-180');
+// })

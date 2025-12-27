@@ -1,3 +1,4 @@
+import 'hamburgers/dist/hamburgers.css';
 import '../css/style.css'
 import './dropdown.js'
 import './product-discount.js'

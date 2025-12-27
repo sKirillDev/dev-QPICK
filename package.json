@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
+    "hamburgers": "^1.2.1",
     "tailwindcss": "^4.1.17",
     "ttf2woff2": "^8.0.0",
     "vite-plugin-full-reload": "^1.2.0",

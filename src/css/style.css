@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "hamburgers/dist/hamburgers.css";
 
 @font-face {
   font-family: "Montserrat";
@@ -34,7 +33,6 @@
 }
 
 @theme {
-  /* catalog */
   --color-sky-50: #EAEAEA;
   --color-stone-900: #1C1C27;
   --color-stone-950: #101010;
@@ -55,14 +53,6 @@
 }
 
 @layer components {
-  .btn-arrow::after {
-    background: url(./assets/img/arrow.svg) no-repeat center;
-  }
-
-  .btn-arrow.open::after {
-    transform: rotate(-180deg);
-  }
-
   .hide-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -71,8 +61,27 @@
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
   }
-  
-  .gm-style-cc, .gm-style .gm-style-cc { 
+
+  .gm-style-cc,
+  .gm-style .gm-style-cc {
     opacity: 0.3;
+  }
+
+  .hamburger {
+    padding: 10px !important;
+  }
+
+  .hamburger-box {
+    max-width: 20px;
+    max-height: 18px;
+  }
+
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    width: 100% !important;
+    height: 3px !important;
+    border-radius: 0 !important;
+    background-color: var(--color-neutral-600) !important;
   }
 }

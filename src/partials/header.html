@@ -10,177 +10,167 @@
     </div>
     <div class="flex shrink-0 md:shrink md:w-full ml-auto md:ml-16.25 gap-8.5 md:gap-0">
         <div class="order-1 md:order-0 md:flex items-center">
-            <button type="button" id="menu" class="p-2.5 relative md:hidden">
-                <img src="./assets/img/menu.svg" alt="menu">
+            <button id="burger" class="menu hamburger hamburger--elastic md:hidden!" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
             </button>
-            <div id="catalog"
-                class="hidden md:block bg-sky-50 md:bg-transparent absolute md:relative right-0 t-0 md:left-0  md:translate-0 z-30">
-                <div class="flex items-center gap-3.75 pr-5 pl-5.75 md:px-0 pt-3.75 md:pt-0">
+            <div id="dropdown"
+                class="absolute hidden md:block right-0 md:right-auto pt-3.75 px-5.5 md:p-0 z-100 bg-sky-50">
+                <div class="dropdown-toggle flex gap-1.25">
                     <svg class="w-3.75 h-5 md:text-neutral-600">
                         <use href="./assets/icons/sprite.svg#icon-mobile"></use>
                     </svg>
-                    <button id="mainBtn"
-                        class="btn-arrow pr-6 text-left text-sm font-medium relative whitespace-nowrap cursor-pointer after:absolute after:w-2.25 after:h-2 after:top-1/2 after:right-2 after:-translate-y-1/2 after:transition-transform after:duration-300">Выбрать
+                    <button type="button"
+                        class="text-left text-sm font-medium ml-2.5 relative whitespace-nowrap cursor-pointer after:absolute after:w-2.25 after:h-2 after:top-1/2 after:right-2 after:-translate-y-1/2 after:transition-transform after:duration-300">Выбрать
                         модель телефона</button>
+                    <svg class="arrow w-2 h-1.25 text-stone-950 my-auto transform duration-300 cursor-pointer">
+                        <use href="./assets/icons/sprite.svg#icon-arrow"></use>
+                    </svg>
                 </div>
-                <div id="dropdown"
-                    class="absolute bg-sky-50 pt-2.5 md:pt-3.75 pb-6 md:pb-7.25 pl-5.75 md:pl-6.75 pr-13 md:pr-18 hidden z-100 w-full rounded-ee-none rounded-es-[20px] md:rounded-b-[30px]">
-                    <div class="pl-8.25 md:pl-0 py-1.25 md:py-0 cursor-pointer relative">
-                        <div
-                            class="btn-arrow text-sm md:text-lg font-medium ml-3 md:ml-0 flex justify-between items-center relative after:absolute after:w-2.25 after:h-2 after:top-1/2 after:-left-3 md:after:left-auto md:after:right-1 after:-translate-y-1/2 after:transition-transform after:duration-300">
-                            Apple</div>
-                        <div class="ml-6 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25 hidden sublist">
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">iPhone
-                                12</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">iPhone
-                                12
-                                Max</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">iPhone
-                                13</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">iPhone
-                                13
-                                Max</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">iPhone
-                                13 Pro
-                                Max</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">iPhone
-                                14</a>
-                        </div>
-                    </div>
-                    <div class="pl-8.25 md:pl-0 py-1.25 md:py-0 cursor-pointer relative">
-                        <div
-                            class="btn-arrow text-sm md:text-lg font-medium ml-3 md:ml-0 flex justify-between items-center relative after:absolute after:w-2.25 after:h-2 after:top-1/2 after:-left-3 md:after:left-auto md:after:right-1 after:-translate-y-1/2 after:transition-transform after:duration-300">
-                            INOI</div>
-                        <div class="ml-6 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25 hidden sublist">
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                        </div>
-                    </div>
-                    <div class="pl-8.25 md:pl-0 py-1.25 md:py-0 cursor-pointer relative">
-                        <div
-                            class="btn-arrow text-sm md:text-lg font-medium ml-3 md:ml-0 flex justify-between items-center relative after:absolute after:w-2.25 after:h-2 after:top-1/2 after:-left-3 md:after:left-auto md:after:right-1 after:-translate-y-1/2 after:transition-transform after:duration-300">
-                            Nokia</div>
-                        <div class="ml-6 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25 hidden sublist">
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                        </div>
-                    </div>
-                    <div class="pl-8.25 md:pl-0 py-1.25 md:py-0 cursor-pointer relative">
-                        <div
-                            class="btn-arrow text-sm md:text-lg font-medium ml-3 md:ml-0 flex justify-between items-center relative after:absolute after:w-2.25 after:h-2 after:top-1/2 after:-left-3 md:after:left-auto md:after:right-1 after:-translate-y-1/2 after:transition-transform after:duration-300">
-                            Oppo</div>
-                        <div class="ml-6 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25 hidden sublist">
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                        </div>
-                    </div>
-                    <div class="pl-8.25 md:pl-0 py-1.25 md:py-0 cursor-pointer relative">
-                        <div
-                            class="btn-arrow text-sm md:text-lg font-medium ml-3 md:ml-0 flex justify-between items-center relative after:absolute after:w-2.25 after:h-2 after:top-1/2 after:-left-3 md:after:left-auto md:after:right-1 after:-translate-y-1/2 after:transition-transform after:duration-300">
-                            Xiaomi</div>
-                        <div class="ml-6 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25 hidden sublist">
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                        </div>
-                    </div>
-                    <div class="pl-8.25 md:pl-0 py-1.25 md:py-0 cursor-pointer relative">
-                        <div
-                            class="btn-arrow text-sm md:text-lg font-medium ml-3 md:ml-0 flex justify-between items-center relative after:absolute after:w-2.25 after:h-2 after:top-1/2 after:-left-3 md:after:left-auto md:after:right-1 after:-translate-y-1/2 after:transition-transform after:duration-300">
-                            Realme</div>
-                        <div class="ml-6 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25 hidden sublist">
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                        </div>
-                    </div>
-                    <div class="pl-8.25 md:pl-0 py-1.25 md:py-0 cursor-pointer relative">
-                        <div
-                            class="btn-arrow text-sm md:text-lg font-medium ml-3 md:ml-0 flex justify-between items-center relative after:absolute after:w-2.25 after:h-2 after:top-1/2 after:-left-3 md:after:left-auto md:after:right-1 after:-translate-y-1/2 after:transition-transform after:duration-300">
-                            Samsung</div>
-                        <div class="ml-6 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25 hidden sublist">
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                        </div>
-                    </div>
-                    <div class="pl-8.25 md:pl-0 py-1.25 md:py-0 cursor-pointer relative">
-                        <div
-                            class="btn-arrow text-sm md:text-lg font-medium ml-3 md:ml-0 flex justify-between items-center relative after:absolute after:w-2.25 after:h-2 after:top-1/2 after:-left-3 md:after:left-auto md:after:right-1 after:-translate-y-1/2 after:transition-transform after:duration-300">
-                            Sony</div>
-                        <div class="ml-6 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25 hidden sublist">
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                        </div>
-                    </div>
-                    <div class="pl-8.25 md:pl-0 mb-2.5 md:mb-0 py-1.25 md:py-0 cursor-pointer relative">
-                        <div
-                            class="btn-arrow text-sm md:text-lg font-medium ml-3 md:ml-0 flex justify-between items-center relative after:absolute after:w-2.25 after:h-2 after:top-1/2 after:-left-3 md:after:left-auto md:after:right-1 after:-translate-y-1/2 after:transition-transform after:duration-300">
-                            Vivo</div>
-                        <div class="ml-6 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25 hidden sublist">
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                            <a href="#"
-                                class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem,
-                                ipsum.</a>
-                        </div>
-                    </div>
+                <ul
+                    class="hidden absolute left-0 top-8.75 bg-sky-50 pt-2.5 md:pt-3.75 pb-6 md:pb-7.25 pl-5.75 md:pl-6.75 pr-13 md:pr-17.5 z-100 w-full rounded-ee-none rounded-es-[20px] md:rounded-b-[30px]">
+                    <li class="last-of-type:mb-4.25 md:last-of-type:mb-0">
+                        <button type="button" class="dropdown-toggle flex cursor-pointer w-full">
+                            <span class="text-sm md:text-lg font-medium ml-1.5 md:ml-0">Apple</span>
+                            <svg
+                                class="arrow w-2.5 h-1.75 text-stone-950 ml-8.5 md:ml-auto my-auto transform duration-300 cursor-pointe -order-1 md:order-0">
+                                <use href="./assets/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <ul class="hidden w-full ml-15 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25">
+                            <li><a href="#"
+                                    class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">iPhone
+                                    12</a></li>
+                            <li><a href="#"
+                                    class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">iPhone
+                                    12 Max</a></li>
+                            <li><a href="#"
+                                    class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">iPhone
+                                    13</a></li>
+                            <li><a href="#"
+                                    class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">iPhone
+                                    13 Max</a></li>
+                            <li><a href="#"
+                                    class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">iPhone
+                                    13 Pro Max</a></li>
+                            <li><a href="#"
+                                    class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">iPhone
+                                    14</a></li>
+                        </ul>
+                    </li>
+                    <li class="last-of-type:mb-4.25 md:last-of-type:mb-0">
+                        <button type="button" class="dropdown-toggle flex cursor-pointer w-full">
+                            <span class="text-sm md:text-lg font-medium ml-1.5 md:ml-0">INOI</span>
+                            <svg
+                                class="arrow w-2.5 h-1.75 text-stone-950 ml-8.5 md:ml-auto my-auto transform duration-300 cursor-pointe -order-1 md:order-0">
+                                <use href="./assets/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <ul class="hidden w-full ml-15 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25">
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                        </ul>
+                    </li>
+                    <li class="last-of-type:mb-4.25 md:last-of-type:mb-0">
+                        <button type="button" class="dropdown-toggle flex cursor-pointer w-full">
+                            <span class="text-sm md:text-lg font-medium ml-1.5 md:ml-0">Nokia</span>
+                            <svg
+                                class="arrow w-2.5 h-1.75 text-stone-950 ml-8.5 md:ml-auto my-auto transform duration-300 cursor-pointe -order-1 md:order-0">
+                                <use href="./assets/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <ul class="hidden w-full ml-15 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25">
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                        </ul>
+                    </li>
+                    <li class="last-of-type:mb-4.25 md:last-of-type:mb-0">
+                        <button type="button" class="dropdown-toggle flex cursor-pointer w-full">
+                            <span class="text-sm md:text-lg font-medium ml-1.5 md:ml-0">Oppo</span>
+                            <svg
+                                class="arrow w-2.5 h-1.75 text-stone-950 ml-8.5 md:ml-auto my-auto transform duration-300 cursor-pointe -order-1 md:order-0">
+                                <use href="./assets/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <ul class="hidden w-full ml-15 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25">
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                        </ul>
+                    </li>
+                    <li class="last-of-type:mb-4.25 md:last-of-type:mb-0">
+                        <button type="button" class="dropdown-toggle flex cursor-pointer w-full">
+                            <span class="text-sm md:text-lg font-medium ml-1.5 md:ml-0">Xiaomi</span>
+                            <svg
+                                class="arrow w-2.5 h-1.75 text-stone-950 ml-8.5 md:ml-auto my-auto transform duration-300 cursor-pointe -order-1 md:order-0">
+                                <use href="./assets/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <ul class="hidden w-full ml-15 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25">
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                        </ul>
+                    </li>
+                    <li class="last-of-type:mb-4.25 md:last-of-type:mb-0">
+                        <button type="button" class="dropdown-toggle flex cursor-pointer w-full">
+                            <span class="text-sm md:text-lg font-medium ml-1.5 md:ml-0">Realme</span>
+                            <svg
+                                class="arrow w-2.5 h-1.75 text-stone-950 ml-8.5 md:ml-auto my-auto transform duration-300 cursor-pointe -order-1 md:order-0">
+                                <use href="./assets/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <ul class="hidden w-full ml-15 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25">
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                        </ul>
+                    </li>
+                    <li class="last-of-type:mb-4.25 md:last-of-type:mb-0">
+                        <button type="button" class="dropdown-toggle flex cursor-pointer w-full">
+                            <span class="text-sm md:text-lg font-medium ml-1.5 md:ml-0">Samsung</span>
+                            <svg
+                                class="arrow w-2.5 h-1.75 text-stone-950 ml-8.5 md:ml-auto my-auto transform duration-300 cursor-pointe -order-1 md:order-0">
+                                <use href="./assets/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <ul class="hidden w-full ml-15 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25">
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                        </ul>
+                    </li>
+                    <li class="last-of-type:mb-4.25 md:last-of-type:mb-0">
+                        <button type="button" class="dropdown-toggle flex cursor-pointer w-full">
+                            <span class="text-sm md:text-lg font-medium ml-1.5 md:ml-0">Sony</span>
+                            <svg
+                                class="arrow w-2.5 h-1.75 text-stone-950 ml-8.5 md:ml-auto my-auto transform duration-300 cursor-pointe -order-1 md:order-0">
+                                <use href="./assets/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <ul class="hidden w-full ml-15 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25">
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                        </ul>
+                    </li>
+                    <li class="last-of-type:mb-4.25 md:last-of-type:mb-0">
+                        <button type="button" class="dropdown-toggle flex cursor-pointer w-full">
+                            <span class="text-sm md:text-lg font-medium ml-1.5 md:ml-0">Vivo</span>
+                            <svg
+                                class="arrow w-2.5 h-1.75 text-stone-950 ml-8.5 md:ml-auto my-auto transform duration-300 cursor-pointe -order-1 md:order-0">
+                                <use href="./assets/icons/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <ul class="hidden w-full ml-15 md:ml-4.75 mt-2.5 md:mt-1.75 mb-4.5 md:mb-5.25">
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                            <li><a href="#" class="text-sm font-medium block py-1.25 hover:text-orange-400 active:text-orange-400 focus:text-orange-400">Lorem, ipsum.</a></li>
+                        </ul>
+                    </li>
                     <div class="grid gap-4.5 md:hidden">
                         <div class="flex items-center gap-2.5">
                             <svg class="w-3.75 h-3.5 text-stone-950">
@@ -192,13 +182,15 @@
                             <svg class="w-3.75 h-4.25 text-stone-950">
                                 <use href="./assets/icons/sprite.svg#icon-document"></use>
                             </svg>
-                            <a href="../../terms-service.html" class="font-medium text-sm active:text-orange-400">Условия сервиса</a>
+                            <a href="../../terms-service.html"
+                                class="font-medium text-sm active:text-orange-400">Условия сервиса</a>
                         </div>
                         <div class="flex items-center gap-2.5">
                             <svg class="w-3.75 h-3.75 text-stone-950">
                                 <use href="./assets/icons/sprite.svg#icon-phone"></use>
                             </svg>
-                            <a href="../../contacts.html" class="font-medium text-sm active:text-orange-400">Контакты</a>
+                            <a href="../../contacts.html"
+                                class="font-medium text-sm active:text-orange-400">Контакты</a>
                         </div>
                         <div class="flex items-center gap-2.5">
                             <svg class="w-4.25 h-4.25 text-stone-950">
@@ -214,7 +206,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </ul>
             </div>
         </div>
         <p class="flex items-center ml-auto">
@@ -233,3 +225,7 @@
         </p>
     </div>
 </header>
+
+<!-- 
+    5. Почистить код
+-->

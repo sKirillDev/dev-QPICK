@@ -34,7 +34,6 @@
             }}
         </div>
     </div>
-
     <div id="cart-filled" class="hidden max-w-7xl mx-auto w-full px-6 pt-7.25">
         <h3 class="hidden md:block text-xl font-semibold text-stone-900 mb-3.25">Корзина</h3>
         <div class="flex flex-col md:flex-row items-start gap-5 md:gap-31.75 min-h-[calc(100vh-118px)] md:min-h-auto">
@@ -56,18 +55,19 @@
                         </div>
                         <div class="flex">
                             <div class="flex gap-3 items-center">
-                                <svg class="w-5.5 h-3.25 text-stone-950">
+                                <svg class="arrow w-5.5 h-3.25 text-stone-950">
                                     <use href="./assets/icons/sprite.svg#icon-truck"></use>
                                 </svg>
-                                <div id="delivery-choice-toggle" class="flex relative cursor-pointer">
-                                    <span class="text-sm font-medium text-black">Доставка курьером</span>
-                                    <span class="arrow ml-19.25 my-auto transform duration-300">
-                                        <svg class="w-3.5 h-2 text-stone-950">
-                                            <use href="./assets/icons/sprite.svg#arrow"></use>
+                                <div class="dropdown flex relative cursor-pointer">
+                                    <div class="dropdown-toggle flex">
+                                        <span class="text-sm font-medium text-black">Доставка
+                                            курьером</span>
+                                        <svg
+                                            class="arrow w-3.5 h-2 text-stone-950 ml-19.25 my-auto transform duration-300">
+                                            <use href="./assets/icons/sprite.svg#icon-arrow"></use>
                                         </svg>
-                                    </span>
-                                    <ul id="delivery-option"
-                                        class="absolute top-5.25 left-0 bg-white z-20 p-2 w-full hidden">
+                                    </div>
+                                    <ul class="menu absolute top-5.25 left-0 bg-white z-20 p-2 w-full hidden">
                                         <li><button type="button" class="mb-2 text-black cursor-pointer">Lorem,
                                                 ipsum.</button></li>
                                         <li><button type="button" class="mb-2 text-black cursor-pointer">Lorem,
